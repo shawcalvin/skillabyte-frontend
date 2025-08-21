@@ -1,0 +1,100 @@
+{
+    "metadata": {
+        "name": "Owner and Dog"
+    },
+    "tables": [
+        {
+            "name": "Person",
+            "fields": [
+                {
+                    "name": "PersonID",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "PersonName",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+                {
+                    "PersonID": 1,
+                    "PersonName": "George Jetson"
+                },
+                {
+                    "PersonID": 2,
+                    "PersonName": "Laura Ingalls"
+                },
+                {
+                    "PersonID": 3,
+                    "PersonName": "Emmit Brown"
+                },
+                {
+                    "PersonID": 4,
+                    "PersonName": "Rubeus Hagrid"
+                },
+                {
+                    "PersonID": 5,
+                    "PersonName": "Dorothy Gale"
+                },
+                {
+                    "PersonID": 6,
+                    "PersonName": "Charlie Brown"
+                }
+            ]
+        },
+        {
+            "name": "Dog",
+            "fields": [
+                {
+                    "name": "DogID",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "DogName",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "OwnerID",
+                    "type": "DOUBLE"
+                }
+            ],
+            "rows": [
+                {
+                    "DogID": 10,
+                    "DogName": "Jack",
+                    "OwnerID": 2
+                },
+                {
+                    "DogID": 11,
+                    "DogName": "Bandit",
+                    "OwnerID": 2
+                },
+                {
+                    "DogID": 12,
+                    "DogName": "Einstein",
+                    "OwnerID": 3
+                },
+                {
+                    "DogID": 13,
+                    "DogName": "Fang",
+                    "OwnerID": 4
+                },
+                {
+                    "DogID": 14,
+                    "DogName": "Lassie",
+                    "OwnerID": null
+                },
+                {
+                    "DogID": 15,
+                    "DogName": "Snoopy",
+                    "OwnerID": 6
+                },
+                {
+                    "DogID": 16,
+                    "DogName": "Toto",
+                    "OwnerID": 5
+                }
+            ]
+        }
+    ]
+}

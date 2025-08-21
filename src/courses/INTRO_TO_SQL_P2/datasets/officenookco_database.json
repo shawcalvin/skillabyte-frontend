@@ -1,0 +1,548 @@
+{
+    "metadata": {
+        "name": "OfficeNookCo",
+        "description": "A dataset containing customer orders, products, and details for OfficeNookCo."
+    },
+    "tables": [
+        {
+            "name": "Customers",
+            "fields": [
+                {
+                    "name": "CustomerID",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "FirstName",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "LastName",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "Email",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "City",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "State",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+                {
+                    "CustomerID": 1,
+                    "FirstName": "Amara",
+                    "LastName": "Okafor",
+                    "Email": "amara.okafor@email.com",
+                    "City": "New York",
+                    "State": "NY"
+                },
+                {
+                    "CustomerID": 2,
+                    "FirstName": "Hiroshi",
+                    "LastName": "Tanaka",
+                    "Email": "hiroshi.tanaka@email.com",
+                    "City": "Chicago",
+                    "State": "IL"
+                },
+                {
+                    "CustomerID": 3,
+                    "FirstName": "Fatima",
+                    "LastName": "Hassan",
+                    "Email": "fatima.hassan@email.com",
+                    "City": "Boston",
+                    "State": "MA"
+                },
+                {
+                    "CustomerID": 4,
+                    "FirstName": "Carlos",
+                    "LastName": "Gomez",
+                    "Email": "carlos.gomez@email.com",
+                    "City": "Miami",
+                    "State": "FL"
+                },
+                {
+                    "CustomerID": 5,
+                    "FirstName": "Aisha",
+                    "LastName": "Nguyen",
+                    "Email": "aisha.nguyen@email.com",
+                    "City": "Seattle",
+                    "State": "WA"
+                },
+                {
+                    "CustomerID": 6,
+                    "FirstName": "Santiago",
+                    "LastName": "Morales",
+                    "Email": "santiago.morales@email.com",
+                    "City": "Austin",
+                    "State": "TX"
+                },
+                {
+                    "CustomerID": 7,
+                    "FirstName": "Lila",
+                    "LastName": "Patel",
+                    "Email": "lila.patel@email.com",
+                    "City": "Denver",
+                    "State": "CO"
+                },
+                {
+                    "CustomerID": 8,
+                    "FirstName": "Yuki",
+                    "LastName": "Kobayashi",
+                    "Email": "yuki.kobayashi@email.com",
+                    "City": "San Francisco",
+                    "State": "CA"
+                },
+                {
+                    "CustomerID": 9,
+                    "FirstName": "Jamal",
+                    "LastName": "Ali",
+                    "Email": "jamal.ali@email.com",
+                    "City": "Phoenix",
+                    "State": "AZ"
+                },
+                {
+                    "CustomerID": 10,
+                    "FirstName": "Maria",
+                    "LastName": "Fernandez",
+                    "Email": "maria.fernandez@email.com",
+                    "City": "Orlando",
+                    "State": "FL"
+                },
+                {
+                    "CustomerID": 11,
+                    "FirstName": "Chinelo",
+                    "LastName": "Adesanya",
+                    "Email": "chinelo.adesanya@email.com",
+                    "City": "Houston",
+                    "State": "TX"
+                },
+                {
+                    "CustomerID": 12,
+                    "FirstName": "Jonas",
+                    "LastName": "Johansson",
+                    "Email": "jonas.johansson@email.com",
+                    "City": "Portland",
+                    "State": "OR"
+                },
+                {
+                    "CustomerID": 13,
+                    "FirstName": "Mei",
+                    "LastName": "Chen",
+                    "Email": "mei.chen@email.com",
+                    "City": "Dallas",
+                    "State": "TX"
+                },
+                {
+                    "CustomerID": 14,
+                    "FirstName": "Liam",
+                    "LastName": "Murphy",
+                    "Email": "liam.murphy@email.com",
+                    "City": "Atlanta",
+                    "State": "GA"
+                },
+                {
+                    "CustomerID": 15,
+                    "FirstName": "Anika",
+                    "LastName": "Sharma",
+                    "Email": "anika.sharma@email.com",
+                    "City": "Nashville",
+                    "State": "TN"
+                },
+                {
+                    "CustomerID": 16,
+                    "FirstName": "Kwame",
+                    "LastName": "Boateng",
+                    "Email": "kwame.boateng@email.com",
+                    "City": "Raleigh",
+                    "State": "NC"
+                },
+                {
+                    "CustomerID": 17,
+                    "FirstName": "Leila",
+                    "LastName": "Karimi",
+                    "Email": "leila.karimi@email.com",
+                    "City": "San Diego",
+                    "State": "CA"
+                },
+                {
+                    "CustomerID": 18,
+                    "FirstName": "Noah",
+                    "LastName": "Park",
+                    "Email": "noah.park@email.com",
+                    "City": "Pittsburgh",
+                    "State": "PA"
+                },
+                {
+                    "CustomerID": 19,
+                    "FirstName": "Sofia",
+                    "LastName": "Martinez",
+                    "Email": "sofia.martinez@email.com",
+                    "City": "Las Vegas",
+                    "State": "NV"
+                },
+                {
+                    "CustomerID": 20,
+                    "FirstName": "Zain",
+                    "LastName": "Khan",
+                    "Email": "zain.khan@email.com",
+                    "City": "Minneapolis",
+                    "State": "MN"
+                }
+            ]
+        },
+        {
+            "name": "Orders",
+            "fields": [
+                {
+                    "name": "OrderID",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "CustomerID",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "OrderDate",
+                    "type": "DATE"
+                },
+                {
+                    "name": "ShipCity",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "ShipState",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+                {
+                    "OrderID": 101,
+                    "CustomerID": 1,
+                    "OrderDate": "2024-01-10",
+                    "ShipCity": "New York",
+                    "ShipState": "NY"
+                },
+                {
+                    "OrderID": 102,
+                    "CustomerID": 2,
+                    "OrderDate": "2024-01-15",
+                    "ShipCity": "Chicago",
+                    "ShipState": "IL"
+                },
+                {
+                    "OrderID": 103,
+                    "CustomerID": 3,
+                    "OrderDate": "2024-01-20",
+                    "ShipCity": "Boston",
+                    "ShipState": "MA"
+                },
+                {
+                    "OrderID": 104,
+                    "CustomerID": 4,
+                    "OrderDate": "2024-01-22",
+                    "ShipCity": "Miami",
+                    "ShipState": "FL"
+                },
+                {
+                    "OrderID": 105,
+                    "CustomerID": 5,
+                    "OrderDate": "2024-01-25",
+                    "ShipCity": "Seattle",
+                    "ShipState": "WA"
+                },
+                {
+                    "OrderID": 106,
+                    "CustomerID": 6,
+                    "OrderDate": "2024-01-30",
+                    "ShipCity": "Austin",
+                    "ShipState": "TX"
+                },
+                {
+                    "OrderID": 107,
+                    "CustomerID": 7,
+                    "OrderDate": "2024-02-01",
+                    "ShipCity": "Denver",
+                    "ShipState": "CO"
+                },
+                {
+                    "OrderID": 108,
+                    "CustomerID": 1,
+                    "OrderDate": "2024-02-10",
+                    "ShipCity": "New York",
+                    "ShipState": "NY"
+                },
+                {
+                    "OrderID": 109,
+                    "CustomerID": 10,
+                    "OrderDate": "2024-02-15",
+                    "ShipCity": "Orlando",
+                    "ShipState": "FL"
+                },
+                {
+                    "OrderID": 110,
+                    "CustomerID": 12,
+                    "OrderDate": "2024-02-20",
+                    "ShipCity": "Portland",
+                    "ShipState": "OR"
+                },
+                {
+                    "OrderID": 111,
+                    "CustomerID": 13,
+                    "OrderDate": "2024-02-25",
+                    "ShipCity": "Dallas",
+                    "ShipState": "TX"
+                },
+                {
+                    "OrderID": 112,
+                    "CustomerID": 14,
+                    "OrderDate": "2024-03-01",
+                    "ShipCity": "Atlanta",
+                    "ShipState": "GA"
+                },
+                {
+                    "OrderID": 113,
+                    "CustomerID": 17,
+                    "OrderDate": "2024-03-05",
+                    "ShipCity": "San Diego",
+                    "ShipState": "CA"
+                },
+                {
+                    "OrderID": 114,
+                    "CustomerID": 18,
+                    "OrderDate": "2024-03-10",
+                    "ShipCity": "Pittsburgh",
+                    "ShipState": "PA"
+                },
+                {
+                    "OrderID": 115,
+                    "CustomerID": 19,
+                    "OrderDate": "2024-03-15",
+                    "ShipCity": "Las Vegas",
+                    "ShipState": "NV"
+                },
+                {
+                    "OrderID": 116,
+                    "CustomerID": 8,
+                    "OrderDate": "2024-03-20",
+                    "ShipCity": "San Francisco",
+                    "ShipState": "CA"
+                },
+                {
+                    "OrderID": 117,
+                    "CustomerID": 11,
+                    "OrderDate": "2024-03-25",
+                    "ShipCity": "Houston",
+                    "ShipState": "TX"
+                },
+                {
+                    "OrderID": 118,
+                    "CustomerID": 15,
+                    "OrderDate": "2024-04-01",
+                    "ShipCity": "Nashville",
+                    "ShipState": "TN"
+                },
+                {
+                    "OrderID": 119,
+                    "CustomerID": 20,
+                    "OrderDate": "2024-04-05",
+                    "ShipCity": "Minneapolis",
+                    "ShipState": "MN"
+                }
+            ]
+        },
+        {
+            "name": "Products",
+            "fields": [
+                {
+                    "name": "ProductID",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "ProductName",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "Category",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "Price",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "StockQuantity",
+                    "type": "DOUBLE"
+                }
+            ],
+            "rows": [
+                {
+                    "ProductID": 1,
+                    "ProductName": "Laptop",
+                    "Category": "Electronics",
+                    "Price": 1000.0,
+                    "StockQuantity": 15
+                },
+                {
+                    "ProductID": 2,
+                    "ProductName": "Smartphone",
+                    "Category": "Electronics",
+                    "Price": 500.0,
+                    "StockQuantity": 25
+                },
+                {
+                    "ProductID": 3,
+                    "ProductName": "Desk Chair",
+                    "Category": "Furniture",
+                    "Price": 120.0,
+                    "StockQuantity": 50
+                },
+                {
+                    "ProductID": 4,
+                    "ProductName": "Office Desk",
+                    "Category": "Furniture",
+                    "Price": 300.0,
+                    "StockQuantity": 10
+                },
+                {
+                    "ProductID": 5,
+                    "ProductName": "Monitor",
+                    "Category": "Electronics",
+                    "Price": 200.0,
+                    "StockQuantity": 30
+                },
+                {
+                    "ProductID": 6,
+                    "ProductName": "Printer",
+                    "Category": "Electronics",
+                    "Price": 150.0,
+                    "StockQuantity": 20
+                },
+                {
+                    "ProductID": 7,
+                    "ProductName": "Bookshelf",
+                    "Category": "Furniture",
+                    "Price": 100.0,
+                    "StockQuantity": 5
+                },
+                {
+                    "ProductID": 8,
+                    "ProductName": "Keyboard",
+                    "Category": "Accessories",
+                    "Price": 50.0,
+                    "StockQuantity": 40
+                },
+                {
+                    "ProductID": 9,
+                    "ProductName": "Mousepad",
+                    "Category": "Accessories",
+                    "Price": 20.0,
+                    "StockQuantity": 40
+                }
+            ]
+        },
+        {
+            "name": "OrderDetails",
+            "fields": [
+                {
+                    "name": "OrderID",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "ProductID",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "Quantity",
+                    "type": "DOUBLE"
+                }
+            ],
+            "rows": [
+                {
+                    "OrderID": 101,
+                    "ProductID": 1,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 101,
+                    "ProductID": 2,
+                    "Quantity": 2
+                },
+                {
+                    "OrderID": 102,
+                    "ProductID": 3,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 103,
+                    "ProductID": 4,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 105,
+                    "ProductID": 5,
+                    "Quantity": 2
+                },
+                {
+                    "OrderID": 105,
+                    "ProductID": 6,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 107,
+                    "ProductID": 1,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 107,
+                    "ProductID": 8,
+                    "Quantity": 4
+                },
+                {
+                    "OrderID": 108,
+                    "ProductID": 2,
+                    "Quantity": 3
+                },
+                {
+                    "OrderID": 110,
+                    "ProductID": 4,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 111,
+                    "ProductID": 3,
+                    "Quantity": 2
+                },
+                {
+                    "OrderID": 112,
+                    "ProductID": 7,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 114,
+                    "ProductID": 8,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 115,
+                    "ProductID": 6,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 118,
+                    "ProductID": 5,
+                    "Quantity": 1
+                },
+                {
+                    "OrderID": 119,
+                    "ProductID": 2,
+                    "Quantity": 3
+                }
+            ]
+        }
+    ]
+}

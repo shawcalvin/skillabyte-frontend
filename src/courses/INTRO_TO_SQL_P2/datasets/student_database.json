@@ -1,0 +1,429 @@
+{
+    "metadata": {
+        "name": "Student"
+    },
+    "tables": [
+        {
+            "name": "Students_Spring2024",
+            "fields": [
+                {
+                    "name": "student_id",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "full_name",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "major",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "academic_year",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "gpa",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "email",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+                {
+                    "student_id": 1,
+                    "full_name": "Aditi Patel",
+                    "major": "Accounting",
+                    "academic_year": "Freshman",
+                    "gpa": 3.5,
+                    "email": "aditi.patel@myschool.edu"
+                },
+                {
+                    "student_id": 2,
+                    "full_name": "Mohammed Khan",
+                    "major": "Finance",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.2,
+                    "email": "mohammed.khan@myschool.edu"
+                },
+                {
+                    "student_id": 3,
+                    "full_name": "Sofia Gonzalez",
+                    "major": "Supply Chain",
+                    "academic_year": "Junior",
+                    "gpa": 3.75,
+                    "email": "sofia.gonzalez@myschool.edu"
+                },
+                {
+                    "student_id": 5,
+                    "full_name": "Emily Wong",
+                    "major": "Accounting",
+                    "academic_year": "Freshman",
+                    "gpa": 3.4,
+                    "email": "emily.wong@myschool.edu"
+                },
+                {
+                    "student_id": 6,
+                    "full_name": "Felix Kim",
+                    "major": "Finance",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.6,
+                    "email": "felix.kim@myschool.edu"
+                },
+                {
+                    "student_id": 7,
+                    "full_name": "Grace Okafor",
+                    "major": "Accounting",
+                    "academic_year": "Junior",
+                    "gpa": 2.95,
+                    "email": "grace.okafor@myschool.edu"
+                },
+                {
+                    "student_id": 9,
+                    "full_name": "Isabella Liu",
+                    "major": "Supply Chain",
+                    "academic_year": "Freshman",
+                    "gpa": 3.25,
+                    "email": "isabella.liu@myschool.edu"
+                },
+                {
+                    "student_id": 10,
+                    "full_name": "James Nguyen",
+                    "major": "Finance",
+                    "academic_year": "Junior",
+                    "gpa": 3.9,
+                    "email": "james.nguyen@myschool.edu"
+                },
+                {
+                    "student_id": 12,
+                    "full_name": "Liam Hernandez",
+                    "major": "Accounting",
+                    "academic_year": "Freshman",
+                    "gpa": 3.05,
+                    "email": "liam.hernandez@myschool.edu"
+                },
+                {
+                    "student_id": 13,
+                    "full_name": "Mia Jackson",
+                    "major": "Finance",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.5,
+                    "email": "mia.jackson@myschool.edu"
+                },
+                {
+                    "student_id": 14,
+                    "full_name": "Noah Clark",
+                    "major": "Supply Chain",
+                    "academic_year": "Junior",
+                    "gpa": 3.45,
+                    "email": "noah.clark@myschool.edu"
+                },
+                {
+                    "student_id": 16,
+                    "full_name": "Paul Young",
+                    "major": "Accounting",
+                    "academic_year": "Freshman",
+                    "gpa": 3.15,
+                    "email": "paul.young@myschool.edu"
+                },
+                {
+                    "student_id": 17,
+                    "full_name": "Quinn Chen",
+                    "major": "Finance",
+                    "academic_year": "Sophomore",
+                    "gpa": 2.8,
+                    "email": "quinn.chen@myschool.edu"
+                },
+                {
+                    "student_id": 18,
+                    "full_name": "Ruby Ahmed",
+                    "major": "Supply Chain",
+                    "academic_year": "Junior",
+                    "gpa": 3.55,
+                    "email": "ruby.ahmed@myschool.edu"
+                },
+                {
+                    "student_id": 20,
+                    "full_name": "Thomas Moore",
+                    "major": "Accounting",
+                    "academic_year": "Freshman",
+                    "gpa": 2.9,
+                    "email": "thomas.moore@myschool.edu"
+                },
+                {
+                    "student_id": 4,
+                    "full_name": "Carlos Santos",
+                    "major": "Accounting",
+                    "academic_year": "Senior",
+                    "gpa": 3.1,
+                    "email": "carlos.santos@myschool.edu"
+                },
+                {
+                    "student_id": 8,
+                    "full_name": "Henry Lee",
+                    "major": "Finance",
+                    "academic_year": "Senior",
+                    "gpa": 3.3,
+                    "email": "henry.lee@myschool.edu"
+                },
+                {
+                    "student_id": 11,
+                    "full_name": "Ana Ramirez",
+                    "major": "Supply Chain",
+                    "academic_year": "Senior",
+                    "gpa": 3.8,
+                    "email": "ana.ramirez@myschool.edu"
+                },
+                {
+                    "student_id": 15,
+                    "full_name": "Olivia Osei",
+                    "major": "Accounting",
+                    "academic_year": "Senior",
+                    "gpa": 3.7,
+                    "email": "olivia.osei@myschool.edu"
+                },
+                {
+                    "student_id": 19,
+                    "full_name": "Sophia Brooks",
+                    "major": "Finance",
+                    "academic_year": "Senior",
+                    "gpa": 3.25,
+                    "email": "sophia.brooks@myschool.edu"
+                }
+            ]
+        },
+        {
+            "name": "Students_Fall2024",
+            "fields": [
+                {
+                    "name": "student_id",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "full_name",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "major",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "academic_year",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "gpa",
+                    "type": "DOUBLE"
+                },
+                {
+                    "name": "email",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+                {
+                    "student_id": 1,
+                    "full_name": "Aditi Patel",
+                    "major": "Accounting",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.7,
+                    "email": "aditi.patel@myschool.edu"
+                },
+                {
+                    "student_id": 2,
+                    "full_name": "Mohammed Khan",
+                    "major": "Finance",
+                    "academic_year": "Junior",
+                    "gpa": 3.0,
+                    "email": "mohammed.khan@myschool.edu"
+                },
+                {
+                    "student_id": 3,
+                    "full_name": "Sofia Gonzalez",
+                    "major": "Supply Chain",
+                    "academic_year": "Senior",
+                    "gpa": 3.65,
+                    "email": "sofia.gonzalez@myschool.edu"
+                },
+                {
+                    "student_id": 5,
+                    "full_name": "Emily Wong",
+                    "major": "Accounting",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.45,
+                    "email": "emily.wong@myschool.edu"
+                },
+                {
+                    "student_id": 6,
+                    "full_name": "Felix Kim",
+                    "major": "Finance",
+                    "academic_year": "Junior",
+                    "gpa": 3.55,
+                    "email": "felix.kim@myschool.edu"
+                },
+                {
+                    "student_id": 7,
+                    "full_name": "Grace Okafor",
+                    "major": "Accounting",
+                    "academic_year": "Senior",
+                    "gpa": 2.95,
+                    "email": "grace.okafor@myschool.edu"
+                },
+                {
+                    "student_id": 9,
+                    "full_name": "Isabella Liu",
+                    "major": "Supply Chain",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.1,
+                    "email": "isabella.liu@myschool.edu"
+                },
+                {
+                    "student_id": 10,
+                    "full_name": "James Nguyen",
+                    "major": "Finance",
+                    "academic_year": "Senior",
+                    "gpa": 3.9,
+                    "email": "james.nguyen@myschool.edu"
+                },
+                {
+                    "student_id": 12,
+                    "full_name": "Liam Hernandez",
+                    "major": "Accounting",
+                    "academic_year": "Sophomore",
+                    "gpa": 2.9,
+                    "email": "liam.hernandez@myschool.edu"
+                },
+                {
+                    "student_id": 13,
+                    "full_name": "Mia Jackson",
+                    "major": "Business Administration",
+                    "academic_year": "Junior",
+                    "gpa": 3.75,
+                    "email": "mia.jackson@myschool.edu"
+                },
+                {
+                    "student_id": 14,
+                    "full_name": "Noah Clark",
+                    "major": "Supply Chain",
+                    "academic_year": "Senior",
+                    "gpa": 3.45,
+                    "email": "noah.clark@myschool.edu"
+                },
+                {
+                    "student_id": 16,
+                    "full_name": "Paul Young",
+                    "major": "Accounting",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.3,
+                    "email": "paul.young@myschool.edu"
+                },
+                {
+                    "student_id": 17,
+                    "full_name": "Quinn Chen",
+                    "major": "Finance",
+                    "academic_year": "Junior",
+                    "gpa": 2.95,
+                    "email": "quinn.chen@myschool.edu"
+                },
+                {
+                    "student_id": 18,
+                    "full_name": "Ruby Ahmed",
+                    "major": "Supply Chain",
+                    "academic_year": "Senior",
+                    "gpa": 3.55,
+                    "email": "ruby.ahmed@myschool.edu"
+                },
+                {
+                    "student_id": 20,
+                    "full_name": "Thomas Moore",
+                    "major": "Business Administration",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.1,
+                    "email": "thomas.moore@myschool.edu"
+                },
+                {
+                    "student_id": 21,
+                    "full_name": "Uma Rogers",
+                    "major": "Accounting",
+                    "academic_year": "Freshman",
+                    "gpa": 3.2,
+                    "email": "uma.rogers@myschool.edu"
+                },
+                {
+                    "student_id": 22,
+                    "full_name": "Victor Price",
+                    "major": "Finance",
+                    "academic_year": "Freshman",
+                    "gpa": 3.6,
+                    "email": "victor.price@myschool.edu"
+                },
+                {
+                    "student_id": 23,
+                    "full_name": "Wendy Scott",
+                    "major": "Business Administration",
+                    "academic_year": "Freshman",
+                    "gpa": 3.1,
+                    "email": "wendy.scott@myschool.edu"
+                },
+                {
+                    "student_id": 24,
+                    "full_name": "Xavier Barnes",
+                    "major": "Accounting",
+                    "academic_year": "Freshman",
+                    "gpa": 3.5,
+                    "email": "xavier.barnes@myschool.edu"
+                },
+                {
+                    "student_id": 25,
+                    "full_name": "Yara Chen",
+                    "major": "Finance",
+                    "academic_year": "Freshman",
+                    "gpa": 3.75,
+                    "email": "yara.chen@myschool.edu"
+                },
+                {
+                    "student_id": 26,
+                    "full_name": "Zane Reid",
+                    "major": "Supply Chain",
+                    "academic_year": "Freshman",
+                    "gpa": 2.85,
+                    "email": "zane.reid@myschool.edu"
+                },
+                {
+                    "student_id": 27,
+                    "full_name": "Abby Walker",
+                    "major": "Accounting",
+                    "academic_year": "Freshman",
+                    "gpa": 3.4,
+                    "email": "abby.walker@myschool.edu"
+                },
+                {
+                    "student_id": 28,
+                    "full_name": "Bryce Flores",
+                    "major": "Finance",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.3,
+                    "email": "bryce.flores@myschool.edu"
+                },
+                {
+                    "student_id": 29,
+                    "full_name": "Carmen Rivera",
+                    "major": "Supply Chain",
+                    "academic_year": "Sophomore",
+                    "gpa": 3.65,
+                    "email": "carmen.rivera@myschool.edu"
+                },
+                {
+                    "student_id": 30,
+                    "full_name": "Derek Watson",
+                    "major": "Business Administration",
+                    "academic_year": "Freshman",
+                    "gpa": 3.25,
+                    "email": "derek.watson@myschool.edu"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,908 @@
+{
+    "metadata": {
+        "name": "Sunny Blendz"
+    },
+    "tables": [
+        {
+            "name": "Customers",
+            "fields": [
+                {
+                    "name": "CustomerID",
+                    "type": "SMALLINT"
+                },
+                {
+                    "name": "FirstName",
+                    "type": "VARCHAR(255)"
+                },
+                {
+                    "name": "LastName",
+                    "type": "VARCHAR(255)"
+                },
+                {
+                    "name": "Email",
+                    "type": "VARCHAR(255)"
+                },
+                {
+                    "name": "RewardBalance",
+                    "type": "SMALLINT"
+                }
+            ],
+            "rows": [
+                {
+                    "CustomerID": 101,
+                    "FirstName": "Olivia",
+                    "LastName": "Miller",
+                    "Email": "olivia.miller@gmail.com",
+                    "RewardBalance": 16
+                },
+                {
+                    "CustomerID": 102,
+                    "FirstName": "Ethan",
+                    "LastName": "Moore",
+                    "Email": "ethan.moore@gmail.com",
+                    "RewardBalance": 40
+                },
+                {
+                    "CustomerID": 103,
+                    "FirstName": "James",
+                    "LastName": "Davis",
+                    "Email": "james.davis@yahoo.com",
+                    "RewardBalance": 31
+                },
+                {
+                    "CustomerID": 104,
+                    "FirstName": "John",
+                    "LastName": "Lopez",
+                    "Email": "john.lopez@outlook.com",
+                    "RewardBalance": 78
+                },
+                {
+                    "CustomerID": 105,
+                    "FirstName": "Emma",
+                    "LastName": "Wilson",
+                    "Email": "emma.wilson@gmail.com",
+                    "RewardBalance": 7
+                },
+                {
+                    "CustomerID": 106,
+                    "FirstName": "Ethan",
+                    "LastName": "Taylor",
+                    "Email": "ethan.taylor@gmail.com",
+                    "RewardBalance": 31
+                },
+                {
+                    "CustomerID": 107,
+                    "FirstName": "Liam",
+                    "LastName": "Moore",
+                    "Email": "liam.moore@gmail.com",
+                    "RewardBalance": 76
+                },
+                {
+                    "CustomerID": 108,
+                    "FirstName": "Ethan",
+                    "LastName": "Wilson",
+                    "Email": "ethan.wilson@outlook.com",
+                    "RewardBalance": 11
+                },
+                {
+                    "CustomerID": 109,
+                    "FirstName": "James",
+                    "LastName": "Clark",
+                    "Email": "james.clark@yahoo.com",
+                    "RewardBalance": 74
+                },
+                {
+                    "CustomerID": 110,
+                    "FirstName": "James",
+                    "LastName": "Moore",
+                    "Email": "james.moore@gmail.com",
+                    "RewardBalance": 52
+                },
+                {
+                    "CustomerID": 111,
+                    "FirstName": "Isabella",
+                    "LastName": "Smith",
+                    "Email": "isabella.smith@yahoo.com",
+                    "RewardBalance": 68
+                },
+                {
+                    "CustomerID": 112,
+                    "FirstName": "John",
+                    "LastName": "Smith",
+                    "Email": "john.smith@gmail.com",
+                    "RewardBalance": 87
+                },
+                {
+                    "CustomerID": 113,
+                    "FirstName": "Liam",
+                    "LastName": "Smith",
+                    "Email": "liam.smith@gmail.com",
+                    "RewardBalance": 71
+                },
+                {
+                    "CustomerID": 114,
+                    "FirstName": "Ava",
+                    "LastName": "Clark",
+                    "Email": "ava.clark@gmail.com",
+                    "RewardBalance": 55
+                },
+                {
+                    "CustomerID": 115,
+                    "FirstName": "Emma",
+                    "LastName": "Moore",
+                    "Email": "emma.moore@outlook.com",
+                    "RewardBalance": 97
+                },
+                {
+                    "CustomerID": 116,
+                    "FirstName": "Mason",
+                    "LastName": "Smith",
+                    "Email": "mason.smith@outlook.com",
+                    "RewardBalance": 64
+                },
+                {
+                    "CustomerID": 117,
+                    "FirstName": "Olivia",
+                    "LastName": "Lopez",
+                    "Email": "olivia.lopez@gmail.com",
+                    "RewardBalance": 41
+                },
+                {
+                    "CustomerID": 118,
+                    "FirstName": "Liam",
+                    "LastName": "White",
+                    "Email": "liam.white@yahoo.com",
+                    "RewardBalance": 86
+                },
+                {
+                    "CustomerID": 119,
+                    "FirstName": "Sophie",
+                    "LastName": "Miller",
+                    "Email": "sophie.miller@gmail.com",
+                    "RewardBalance": 44
+                },
+                {
+                    "CustomerID": 120,
+                    "FirstName": "Sophie",
+                    "LastName": "Davis",
+                    "Email": "sophie.davis@outlook.com",
+                    "RewardBalance": 13
+                }
+            ]
+        },
+        {
+            "name": "Orders",
+            "fields": [
+                {
+                    "name": "OrderID",
+                    "type": "SMALLINT"
+                },
+                {
+                    "name": "CustomerID",
+                    "type": "SMALLINT"
+                },
+                {
+                    "name": "Product",
+                    "type": "VARCHAR(255)"
+                },
+                {
+                    "name": "PurchaseDate",
+                    "type": "DATE"
+                },
+                {
+                    "name": "Amount",
+                    "type": "DOUBLE"
+                }
+            ],
+            "rows": [
+                {
+                    "OrderID": 1001,
+                    "CustomerID": 101,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-01",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1002,
+                    "CustomerID": 120,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-01",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1003,
+                    "CustomerID": 109,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-01",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1004,
+                    "CustomerID": 101,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-02",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1005,
+                    "CustomerID": 116,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-02",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1006,
+                    "CustomerID": 119,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-02",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1007,
+                    "CustomerID": 110,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-03",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1008,
+                    "CustomerID": 118,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-03",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1009,
+                    "CustomerID": 103,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-03",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1010,
+                    "CustomerID": 102,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-04",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1011,
+                    "CustomerID": 111,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-04",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1012,
+                    "CustomerID": 105,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-04",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1013,
+                    "CustomerID": 101,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-05",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1014,
+                    "CustomerID": 103,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-05",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1015,
+                    "CustomerID": 120,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-05",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1016,
+                    "CustomerID": 113,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-05",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1017,
+                    "CustomerID": 102,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-06",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1018,
+                    "CustomerID": 110,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-06",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1019,
+                    "CustomerID": 111,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-06",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1020,
+                    "CustomerID": 106,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-06",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1021,
+                    "CustomerID": 109,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-07",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1022,
+                    "CustomerID": 102,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-07",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1023,
+                    "CustomerID": 103,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-08",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1024,
+                    "CustomerID": 109,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-08",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1025,
+                    "CustomerID": 107,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-08",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1026,
+                    "CustomerID": 108,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-09",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1027,
+                    "CustomerID": 114,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-09",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1028,
+                    "CustomerID": 119,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-09",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1029,
+                    "CustomerID": 102,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-09",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1030,
+                    "CustomerID": 110,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-10",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1031,
+                    "CustomerID": 105,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-10",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1032,
+                    "CustomerID": 104,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-11",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1033,
+                    "CustomerID": 108,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-11",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1034,
+                    "CustomerID": 115,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-11",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1035,
+                    "CustomerID": 111,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-12",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1036,
+                    "CustomerID": 102,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-12",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1037,
+                    "CustomerID": 108,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-12",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1038,
+                    "CustomerID": 103,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-13",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1039,
+                    "CustomerID": 103,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-13",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1040,
+                    "CustomerID": 104,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-13",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1041,
+                    "CustomerID": 111,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-13",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1042,
+                    "CustomerID": 117,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-14",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1043,
+                    "CustomerID": 117,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-14",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1044,
+                    "CustomerID": 120,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-14",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1045,
+                    "CustomerID": 107,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-14",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1046,
+                    "CustomerID": 105,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-15",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1047,
+                    "CustomerID": 111,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-15",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1048,
+                    "CustomerID": 107,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-15",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1049,
+                    "CustomerID": 101,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-15",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1050,
+                    "CustomerID": 119,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-16",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1051,
+                    "CustomerID": 117,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-16",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1052,
+                    "CustomerID": 106,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-17",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1053,
+                    "CustomerID": 118,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-17",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1054,
+                    "CustomerID": 116,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-17",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1055,
+                    "CustomerID": 107,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-18",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1056,
+                    "CustomerID": 110,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-18",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1057,
+                    "CustomerID": 108,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-18",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1058,
+                    "CustomerID": 104,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-19",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1059,
+                    "CustomerID": 112,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-19",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1060,
+                    "CustomerID": 116,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-19",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1061,
+                    "CustomerID": 102,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-20",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1062,
+                    "CustomerID": 108,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-20",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1063,
+                    "CustomerID": 119,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-20",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1064,
+                    "CustomerID": 120,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-21",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1065,
+                    "CustomerID": 104,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-21",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1066,
+                    "CustomerID": 117,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-21",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1067,
+                    "CustomerID": 101,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-22",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1068,
+                    "CustomerID": 104,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-22",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1069,
+                    "CustomerID": 119,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-22",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1070,
+                    "CustomerID": 109,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-22",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1071,
+                    "CustomerID": 116,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-23",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1072,
+                    "CustomerID": 101,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-23",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1073,
+                    "CustomerID": 112,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-23",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1074,
+                    "CustomerID": 119,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-23",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1075,
+                    "CustomerID": 119,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-24",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1076,
+                    "CustomerID": 104,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-24",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1077,
+                    "CustomerID": 111,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-25",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1078,
+                    "CustomerID": 108,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-25",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1079,
+                    "CustomerID": 119,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-25",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1080,
+                    "CustomerID": 119,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-26",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1081,
+                    "CustomerID": 101,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-26",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1082,
+                    "CustomerID": 105,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-26",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1083,
+                    "CustomerID": 118,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-27",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1084,
+                    "CustomerID": 110,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-27",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1085,
+                    "CustomerID": 120,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-27",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1086,
+                    "CustomerID": 119,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-27",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1087,
+                    "CustomerID": 116,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-28",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1088,
+                    "CustomerID": 102,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-28",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1089,
+                    "CustomerID": 116,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-28",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1090,
+                    "CustomerID": 115,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-29",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1091,
+                    "CustomerID": 115,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-29",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1092,
+                    "CustomerID": 119,
+                    "Product": "Berry Blast Smoothie",
+                    "PurchaseDate": "2025-01-29",
+                    "Amount": 15.0
+                },
+                {
+                    "OrderID": 1093,
+                    "CustomerID": 105,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-29",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1094,
+                    "CustomerID": 116,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-30",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1095,
+                    "CustomerID": 120,
+                    "Product": "Protein Power Smoothie",
+                    "PurchaseDate": "2025-01-30",
+                    "Amount": 20.0
+                },
+                {
+                    "OrderID": 1096,
+                    "CustomerID": 111,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-30",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1097,
+                    "CustomerID": 105,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-31",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1098,
+                    "CustomerID": 114,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-31",
+                    "Amount": 22.0
+                },
+                {
+                    "OrderID": 1099,
+                    "CustomerID": 116,
+                    "Product": "Citrus Splash Juice",
+                    "PurchaseDate": "2025-01-31",
+                    "Amount": 10.0
+                },
+                {
+                    "OrderID": 1100,
+                    "CustomerID": 105,
+                    "Product": "Tropical Mango Smoothie",
+                    "PurchaseDate": "2025-01-31",
+                    "Amount": 12.5
+                },
+                {
+                    "OrderID": 1101,
+                    "CustomerID": 106,
+                    "Product": "Green Detox Smoothie",
+                    "PurchaseDate": "2025-01-31",
+                    "Amount": 22.0
+                }
+            ]
+        }
+    ]
+}
