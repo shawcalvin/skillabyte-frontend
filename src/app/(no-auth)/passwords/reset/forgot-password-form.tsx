@@ -1,28 +1,17 @@
 "use client"
 
-import { useEffect, useState } from "react";
-import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
-import { login } from "@/actions/auth";
-import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { requestResetPassword } from "@/actions/auth";
 import { LoadingIcon } from "@/components/ui/loading-icon";
 import { TextLogo } from "@/components/logo/logo";
 
-export function LoginForm() {
-    const [showPassword, setShowPassword] = useState<boolean>(false);
+export function ForgotPasswordForm() {
     const [loading, setLoading] = useState<boolean>(false);
+    const [success, setSuccess] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [formData, setFormData] = useState({
         email: "",
-        password: "",
     });
-
-    const router = useRouter();
-
-    useEffect(() => { router.prefetch("/learner/dashboard") }, [router]);
-
-    const toggleShowPassword = () => {
-        setShowPassword(!showPassword);
-    }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({
@@ -32,9 +21,8 @@ export function LoginForm() {
     };
 
     const validateForm = () => {
-        const { email, password } = formData;
-        if (!email) return "Please enter your email.";
-        if (!password) return "Please enter your password.";
+        const { email } = formData;
+        if (!email) return "Please enter the email associated with your account.";
         return null;
     };
 
@@ -51,11 +39,11 @@ export function LoginForm() {
         setLoading(true);
 
         try {
-            const { email, password } = formData;
-            const res = await login(email, password);
+            const { email } = formData;
+            const res = await requestResetPassword(email);
 
             if (res.code === 200) {
-                window.location.href = "/learner/dashboard";
+                setSuccess(true);
                 return;
             }
 
@@ -67,6 +55,22 @@ export function LoginForm() {
             setLoading(false);
         }
     };
+
+    if (success) {
+        return (
+            <>
+                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
+                    <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
+                        <TextLogo color="blue" className='h-16 w-auto mx-auto mb-8' />
+
+                        <p className="mt-10 text-center text-sm text-gray-500 mb-4">
+                            Check your email for instructions on how to reset your password.{' '}
+                        </p>
+                    </div>
+                </div>
+            </>
+        )
+    }
 
     return (
         <>
@@ -94,34 +98,6 @@ export function LoginForm() {
                                 />
                             </div>
                         </div>
-                        <div>
-                            <label htmlFor="password" className="flex justify-between items-center text-sm font-medium leading-6 text-gray-900">
-                                Password
-                                <div className="flex items-center text-primary-gray-900 hover:font-bold" onClick={toggleShowPassword}>
-                                    {showPassword ? <EyeSlashIcon className="h-4" /> : <EyeIcon className="h-4" />}
-                                    <span className="text-xs mx-2">{showPassword ? "Hide" : "Show"}</span>
-                                </div>
-                            </label>
-                            <div className="mt-2 items-center">
-                                <input
-                                    id="password"
-                                    name="password"
-                                    type={showPassword ? "text" : "password"}
-                                    value={formData.password}
-                                    onChange={handleChange}
-                                    required
-                                    autoComplete="current-password"
-                                    className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
-                                />
-                            </div>
-                        </div>
-                        <div className="flex items-center justify-end">
-                            <div className="text-sm leading-6">
-                                <a href="/passwords/reset" className="font-semibold text-primary-orange-500 hover:text-primary-orange-400">
-                                    Forgot password?
-                                </a>
-                            </div>
-                        </div>
                         <div className="flex items-center">
                             <button
                                 type="submit"
@@ -133,13 +109,11 @@ export function LoginForm() {
                                     }
                                     {!loading &&
                                         <p>
-                                            Sign in
+                                            Reset Password
                                         </p>
                                     }
                                 </div>
-
                             </button>
-
                         </div>
                         <p className="text-xs text-center text-red-500 font-semibold">
                             {error}

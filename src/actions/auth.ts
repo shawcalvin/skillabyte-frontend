@@ -112,3 +112,71 @@ export async function createAccount(firstName: string, lastName: string, email: 
         };
     }
 }
+
+export async function requestResetPassword(email: string) {
+    const url = process.env.NEXT_PUBLIC_API_URL + "/auth/password/reset/"
+    const res = await fetch(url, {
+        method: "POST",
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            email: email.toLowerCase()
+        }),
+    });
+
+    if (res.ok) {
+        return {
+            message: "Email sent successfully",
+            code: res.status
+        }
+    }
+
+
+    let errorMessage;
+    switch (res.status) {
+        case 401:
+            errorMessage = "Email not found.";
+            break;
+        default:
+            errorMessage = "An unexpected error occurred. Please try again.";
+            break;
+    }
+    return {
+        message: errorMessage,
+        code: res.status
+    }
+}
+
+export async function confirmResetPassword(token: string, uid: string, password: string, password_confirm: string) {
+    const url = process.env.NEXT_PUBLIC_API_URL + "/auth/password/confirm/"
+    const res = await fetch(url, {
+        method: "POST",
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            token: token,
+            uid: uid,
+            password: password,
+            password_confirm: password_confirm
+        }),
+    });
+
+    if (res.ok) {
+        return {
+            message: "Password reset successfully",
+            code: res.status
+        }
+    }
+
+
+    let errorMessage;
+    switch (res.status) {
+        default:
+            errorMessage = "An unexpected error occurred. Please try again.";
+            break;
+    }
+    return {
+        message: errorMessage,
+        code: res.status
+    }
+}
